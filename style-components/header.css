@@ -1,6 +1,6 @@
 header {
 	backdrop-filter: blur(16px);
-	background-color: var(--sticky-header-background-color);
+	background-color: var(--background-color);
 	border: .05rem solid var(--slider-border-color);
 	border-radius: var(--header-border-radius);
 	display: flex;
@@ -19,7 +19,7 @@ header {
 .logo {
 	background-image: var(--linear-gradient);
 	display: none;
-	font-family: var(--ff-courgette);
+	font-family: var(--ff-fraunces);
 	font-size: 2rem;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
