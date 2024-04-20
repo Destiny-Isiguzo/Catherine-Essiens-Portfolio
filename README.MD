@@ -6,9 +6,6 @@ This is a portfolio for Catherine Essien, a seasoned Cloud DevOps Engineer from 
 
 ## Table of Contents
 
-- [Cloud Developer Portfolio](#cloud-developer-portfolio)
-  - [Description](#description)
-  - [Table of Contents](#table-of-contents)
   - [Usage](#usage)
   - [Projects](#projects)
   - [About](#about)
