@@ -1,0 +1,76 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
+    text-align: center;
+    padding: var(--margin-t-b-hero) var(--margin-l-r);
+    max-width: 70rem;
+    margin: auto;
+}
+
+.hero-heading {
+    background-image: var(--hero-heading-color);
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+    font-size: clamp(2.5rem, 1.9718rem + 2.2535vw, 4rem);
+    font-family: var(--ff-fraunces);
+    margin-bottom: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+}
+
+.colored-name {
+    background-image: var(--linear-gradient);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+.hero-subheading {
+    font-size: clamp(0.95rem, 0.8972rem + 0.2254vw, 1.1rem);
+    margin-bottom: clamp(1.9rem, 1.6183rem + 1.2019vw, 2.7rem);
+}
+
+.colored-text {
+    text-decoration-line: underline;
+}
+
+.hero-btns-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+}
+
+.resume-btn,
+.get-in-touch-btn {
+    background-color: var(--slider-background-color);
+	border: .08rem solid var(--slider-border-color);
+    border-radius: var(--btn-border-radius);
+    color: var(--nav-color);
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    padding: clamp(0.45rem, 0.3444rem + 0.4507vw, 0.75rem) clamp(0.85rem, 0.7092rem + 0.6009vw, 1.25rem);
+    font-size: clamp(0.93rem, 0.9159rem + 0.0601vw, 0.97rem);
+	transition: all .3s ease;
+}
+
+.resume-btn:is(:hover, :active),
+.get-in-touch-btn:is(:hover, :active) {
+    border: .08rem solid var(--text-color);
+}
+
+/* breakpoint 1290px media query */
+@media screen and (max-width: 80.625em) {
+    .colored-name {
+        background-image: none;
+    }
+}
+
+/* breakpoint 1024px media query */
+@media screen and (max-width: 64em) {
+    .hero-image {
+        width: clamp(15rem, 13.5915rem + 6.0094vw, 19rem);
+    }
+}

@@ -1,0 +1,172 @@
+.work {
+    /* padding: clamp(2.5rem, 1.6197rem + 3.7559vw, 5rem) clamp(0.8rem, -3.4958rem + 18.3286vw, 13rem) var(--margin-t-b) clamp(0.8rem, -3.4958rem + 18.3286vw, 13rem); */
+
+    padding: clamp(2.5rem, 1.6197rem + 3.7559vw, 5rem) 
+    clamp(0.8rem, -2.4394rem + 13.8216vw, 10rem) var(--margin-t-b) 
+    clamp(0.8rem, -2.4394rem + 13.8216vw, 10rem);
+    margin: auto;
+    /* max-width: 75rem; */
+}
+
+.work-heading-container {
+    max-width: 42rem;
+    margin-bottom: 4rem;
+}
+
+.work-heading {
+    color: var(--color-light1);
+    font-family: var(--ff-fraunces);
+    font-size: clamp(1.9rem, 1.6887rem + 0.9014vw, 2.5rem);
+    margin-bottom: 1rem;
+}
+
+.work-subheading {
+    font-size: clamp(0.93rem, 0.9159rem + 0.0601vw, 0.97rem);
+}
+
+.work-project-list-container {
+    display: grid;
+    gap: clamp(1.8rem, 1.5535rem + 1.0516vw, 2.5rem);
+}
+
+.work-project-list {
+    background-color: var(--project-list-background-color);
+    border: .08rem solid var(--slider-border-color);
+    border-radius: var(--project-list-border-radius);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: clamp(1.2rem, 0.7070rem + 2.1033vw, 2.6rem);
+}
+
+.work-project-list4 {
+    border: .15rem dashed var(--slider-border-color);
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.5rem, 0.1479rem + 1.5023vw, 1.5rem);
+    height: clamp(15rem, 11.4789rem + 15.0235vw, 25rem);
+}
+
+.work-project-list4 a {
+    background-color: var(--background-color);
+    border: .08rem solid var(--slider-border-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    transition: all .3s ease;
+}
+
+.work-project-list4 a i {
+    color: var(--nav-color);
+    font-size: clamp(0.93rem, 0.9054rem + 0.1052vw, 1rem);
+}
+
+.work-project-list4 a:is(:hover, :active) {
+    border: .08rem solid var(--text-color)
+}
+
+.work-project-list-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.2rem;
+    max-width: 32rem;
+}
+
+.work-project-list-texts {
+    display: grid;
+    gap: .85rem;
+}
+
+.work-project-heading {
+    color: var(--color-light1);
+    font-family: var(--ff-fraunces);
+    font-size: clamp(1.4rem, 1.2415rem + 0.6761vw, 1.85rem);
+}
+
+.work-project-subheading {
+    color: var(--color-light1);
+    font-size: .89rem;
+}
+
+.work-project-description {
+    font-size: clamp(0.93rem, 0.9159rem + 0.0601vw, 0.97rem);
+}
+
+.work-project-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.source-code-btn,
+.live-demo-btn {
+    background-color: var(--background-color);
+    border: .08rem solid var(--slider-border-color);
+    border-radius: var(--btn-border-radius);
+    color: var(--nav-color);
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    padding: clamp(0.45rem, 0.3444rem + 0.4507vw, 0.75rem) clamp(0.85rem, 0.7092rem + 0.6009vw, 1.25rem);
+    font-size: clamp(0.93rem, 0.9159rem + 0.0601vw, 0.97rem);
+	transition: all .3s ease;
+}
+
+.source-code-btn:is(:hover, :active, :focus),
+.live-demo-btn:is(:hover, :active, :focus) {
+    border: .08rem solid var(--text-color);
+}
+
+.work-project-image {
+    width: 34rem;
+}
+
+.view-more-projects-btn {
+    background-color: var(--slider-background-color);
+	border: .08rem solid var(--slider-border-color);
+    border-radius: var(--btn-border-radius);
+    color: var(--nav-color);
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    padding: clamp(0.45rem, 0.3444rem + 0.4507vw, 0.75rem) clamp(0.85rem, 0.7092rem + 0.6009vw, 1.25rem);
+    font-size: clamp(0.93rem, 0.9159rem + 0.0601vw, 0.97rem);
+    margin: auto;
+	transition: all .3s ease;
+    width: max-content;
+}
+
+.view-more-projects-btn:is(:hover, :active) {
+    border: .08rem solid var(--text-color);
+}
+
+/* .view-more-projects-btn i {
+    transition: all .35s ease;
+}
+
+.view-more-projects-btn:is(:hover, :active) i  {
+    transform: translateX(.3rem);
+} */
+
+/* breakpoint 1024px media query */
+@media screen and (max-width: 64em) {
+    .work-project-list4 a {
+        order: -1;
+    }
+
+    .work-project-image {
+        order: -1;
+    }
+}
+
+/* breakpoint 600px media query */
+@media screen and (max-width: 37.5em) {
+    .work-project-btn-container {
+        justify-content: center;
+    }
+}

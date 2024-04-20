@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Discover Catherine Essien's Cloud Developer Portfolio, showcasing her skills and experience in cloud computing, web development, and more. Explore her work, learn about her background, and get in touch for potential collaborations." 
+        />
+		<meta
+			name="keywords"
+			content="Cloud Developer, Portfolio, Catherine Essien, Dev Ops, Altschool Graduate" 
+        />
+		<meta name="author" content="Catherine Essien" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" 
+        />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" 
+        />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="style-components/resets.css" />
+        <link rel="stylesheet" href="style-components/header.css" />
+        <link rel="stylesheet" href="style-components/hero.css" />
+        <link rel="stylesheet" href="style-components/work.css" />
+        <link rel="stylesheet" href="style-components/about.css" />
+        <link rel="stylesheet" href="style-components/contact.css" />
+        <link rel="stylesheet" href="style-components/footer.css" />
+        <link rel="stylesheet" href="style-components/style.css" />
+
+		<script src="https://unpkg.com/scrollreveal"></script>
+        <script src="src/main.js" defer></script>
+		<title>Catherine Essien - Cloud Dev Portfolio</title>
+	</head>
+	<body>
+		<header>
+			<a href="/index.html">
+				<h2 class="logo">CE</h2>
+			</a>
+			<i class="fa-solid fa-bars header-navbar-btn" id="headerNavBarBtn">
+			</i>
+			<div class="header-navbar-container" id="headerNavBarContainer">
+				<nav class="header-navbar">
+					<a
+						href="index.html"
+						class="header-navbar-link currentlyActive"
+						id="headerNavBarLink">
+						Home
+					</a>
+					<a
+						href="#work"
+						class="header-navbar-link"
+						id="headerNavBarLink">
+						Work
+					</a>
+					<a
+						href="#about"
+						class="header-navbar-link"
+						id="headerNavBarLink">
+						About
+					</a>
+					<a
+						href="#contact-me"
+						class="header-navbar-link"
+						id="headerNavBarLink">
+						Contact Me
+					</a>
+				</nav>
+
+				<div class="header-right-container">
+					<div class="header-social-icons-container">
+						<a
+							href="https://www.linkedin.com/in/catherine-essien"
+							target="_blank">
+							<i
+								class="fa-brands fa-linkedin"
+								title="LinkedIn"
+								aria-label="LinkedIn profile">
+							</i>
+						</a>
+						<a
+							href="https://github.com/catherine-essien"
+							target="_blank">
+							<i
+								class="fa-brands fa-github"
+								title="GitHub"
+								aria-label="GitHub profile">
+							</i>
+						</a>
+						<a
+							href="https://x.com/Kate_Essien1?t=nChOjeHVFunskIcQImSj3w&s=09"
+							target="_blank">
+							<i
+								class="fa-brands fa-x-twitter"
+								title="Twitter"
+								aria-label="Twitter profile">
+							</i>
+						</a>
+					</div>
+					<div class="header-right-divider"></div>
+					<label
+						class="switch"
+						aria-label="Dark and light theme switcher">
+						<input type="checkbox" id="mode-switch" />
+						<span class="slider round">
+							<div class="slider-icon-wrapper">
+								<i class="bi bi-sun theme-icon" id="theme-icon">
+								</i>
+							</div>
+						</span>
+						<p
+							class="theme-switch-tooltip"
+							id="theme-switch-tooltip">
+                        </p>
+					</label>
+				</div>
+			</div>
+		</header>
+		<!-- END OF HEADER -->
+
+		<main>
+			<!-- <div class="dot-animation" id="dot-animation">
+				<div class="dot-loader" id="dot-loader">
+					<span style="--i: 1"></span>
+					<span style="--i: 2"></span>
+					<span style="--i: 3"></span>
+					<span style="--i: 4"></span>
+					<span style="--i: 5"></span>
+					<span style="--i: 6"></span>
+					<span style="--i: 7"></span>
+					<span style="--i: 8"></span>
+					<span style="--i: 9"></span>
+					<span style="--i: 10"></span>
+					<span style="--i: 11"></span>
+					<span style="--i: 12"></span>
+					<span style="--i: 13"></span>
+					<span style="--i: 14"></span>
+					<span style="--i: 15"></span>
+					<span style="--i: 16"></span>
+					<span style="--i: 17"></span>
+					<span style="--i: 18"></span>
+					<span style="--i: 19"></span>
+					<span style="--i: 20"></span>
+				</div>
+			</div> -->
+
+			<button class="top-btn" id="top-btn" title="Go to top" aria-label="Go to top button">
+				<i class="fa-solid fa-arrow-up top-btn-icon" aria-label="Go to top button"></i>
+			</button>
+			<!-- END OF TOP BUTTON -->
+
+			<div class="loader-wrapper" id="loader-wrapper">
+				<div class="loader" id="loader"></div>
+				<div class="loader-section section-left"></div>
+				<div class="loader-section section-right"></div>
+			</div>
+			<!-- END OF LOADING ANIMATIONS -->
+
+			<section class="hero">
+				<img
+					src="images/hero-image.png"
+					alt="Hero Image"
+					class="hero-image" 
+				/>
+				<div class="hero-text-container">
+					<h1 class="hero-heading">
+						Hi, I'm
+						<span class="colored-name">Catherine Essien</span>
+					</h1>
+					<p class="hero-subheading">
+						A seasoned Cloud DevOps Engineer from
+						<span class="colored-text">Nigeria</span>, Catherine
+						specializes in cloud computing, and DevOps practices.
+						With a strong background in software engineering and a
+						passion for creating efficient, scalable solutions.
+						Explore her portfolio to learn more about her skills and
+						experience.
+					</p>
+					<div class="hero-btns-container">
+						<a href="" target="_blank" class="resume-btn">
+							Resume
+							<i class="fa-solid fa-arrow-up-right-from-square">
+							</i>
+						</a>
+						<a href="#contact-me" class="get-in-touch-btn">
+							Get in Touch
+							<i class="fa-solid fa-envelope"></i>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- END OF HERO SECTION -->
+
+			<section class="work" id="work">
+				<div class="work-heading-container">
+					<h2 class="work-heading">My work</h2>
+					<p class="work-subheading">
+						Here's a glimpse of some of my recent and exciting cloud
+						development projects. Each of them reflects my focus on
+						user-centered design and my commitment to excellence in
+						user experience.
+					</p>
+				</div>
+				<div class="work-project-list-container">
+					<div class="work-project-list | work-project-list1">
+						<div class="work-project-list-text-container">
+							<div class="work-project-list-texts">
+								<h3 class="work-project-heading">Ecommerce</h3>
+								<p class="work-project-subheading">
+									2022 - Cloud development
+								</p>
+								<p class="work-project-description">
+									Revamped an e-commerce platform using cloud
+									technologies, enhancing the shopping
+									experience, and boosting brand recognition.
+									This led to enhanced user interaction,
+									elevated sales, and a smooth shopping
+									journey. The cloud-based solution also
+									provided scalability and reliability to the
+									platform
+								</p>
+							</div>
+							<div class="work-project-btn-container">
+								<a
+									href=""
+									target="_blank"
+									class="source-code-btn">
+									Source Code
+									<i class="fa-brands fa-github"></i>
+								</a>
+								<a
+									href=""
+									target="_blank"
+									class="live-demo-btn">
+									Live Demo
+									<i
+										class="fa-solid fa-arrow-up-right-from-square">
+									</i>
+								</a>
+							</div>
+						</div>
+						<img
+							src="images/project-image1.png"
+							alt="Work project image"
+							class="work-project-image" 
+						/>
+					</div>
+
+					<div class="work-project-list | work-project-list2">
+						<div class="work-project-list-text-container">
+							<div class="work-project-list-texts">
+								<h3 class="work-project-heading">
+									Tour Booking App
+								</h3>
+								<p class="work-project-subheading">
+									2022 - Cloud development
+								</p>
+								<p class="work-project-description">
+									Developed a cloud-based travel booking app
+									that offers users a seamless experience for
+									planning and booking their dream vacations.
+									The app utilizes cloud services for data
+									storage, processing, and analytics, ensuring
+									high availability, scalability, and
+									reliability. Users can easily browse
+									destinations, select packages, and manage
+									reservations, making travel planning a
+									breeze
+								</p>
+							</div>
+							<div class="work-project-btn-container">
+								<a
+									href=""
+									target="_blank"
+									class="source-code-btn">
+									Source Code
+									<i class="fa-brands fa-github"></i>
+								</a>
+								<a
+									href=""
+									target="_blank"
+									class="live-demo-btn">
+									Live Demo
+									<i
+										class="fa-solid fa-arrow-up-right-from-square"></i>
+								</a>
+							</div>
+						</div>
+						<img
+							src="images/project-image2.png"
+							alt=" Work project image"
+							class="work-project-image" />
+					</div>
+
+					<div class="work-project-list | work-project-list3">
+						<div class="work-project-list-text-container">
+							<div class="work-project-list-texts">
+								<h3 class="work-project-heading">
+									Online Streaming App
+								</h3>
+								<p class="work-project-subheading">
+									2022 - Cloud development
+								</p>
+								<p class="work-project-description">
+									Developed a cloud-based online streaming app
+									that brings entertainment to users'
+									fingertips. The app utilizes cloud services
+									for content delivery, ensuring high
+									availability, scalability, and reliability.
+									The app offers a vast library of content,
+									smooth playback, and personalized
+									recommendations, enhancing the user's
+									streaming experience
+								</p>
+							</div>
+							<div class="work-project-btn-container">
+								<a
+									href=""
+									target="_blank"
+									class="source-code-btn">
+									Source Code
+									<i class="fa-brands fa-github"></i>
+								</a>
+								<a
+									href=""
+									target="_blank"
+									class="live-demo-btn">
+									Live Demo
+									<i
+										class="fa-solid fa-arrow-up-right-from-square"></i>
+								</a>
+							</div>
+						</div>
+						<img
+							src="images/project-image3.png"
+							alt=" Work project image"
+							class="work-project-image" />
+					</div>
+
+					<div class="work-project-list | work-project-list4">
+						<a href="#contact-me">
+							<i class="fa-solid fa-plus"></i>
+						</a>
+						<h3 class="work-project-heading">
+							Your project goes here
+						</h3>
+					</div>
+
+					<a
+						href="https://github.com/catherine-essien"
+						target="_blank"
+						class="view-more-projects-btn">
+						View all projects
+						<i class="fa-solid fa-arrow-right"></i>
+					</a>
+				</div>
+			</section>
+			<!-- END OF WORK SECTION -->
+
+			<section class="about" id="about">
+				<div class="about-text-container">
+					<h2 class="about-heading">About Me</h2>
+					<p class="about-description">
+						With over 4 years of experience in cloud development,
+						I'm passionate about creating efficient, scalable, and
+						secure solutions that meet users' needs. My expertise
+						includes designing and implementing cloud
+						infrastructure, optimizing performance, and ensuring the
+						security and compliance of cloud-based systems. I have a
+						deep understanding of cloud service providers such as
+						AWS, Azure, and Google Cloud Platform, and I am
+						committed to staying up-to-date with the latest trends
+						and best practices in cloud computing.
+					</p>
+					<div class="about-skills-container">
+						<h3 class="about-skills-heading">My skills</h3>
+						<div class="skills-container">
+							<div class="skill-items">
+								<div class="skills">
+									<i class="fa-solid fa-circle"></i>
+									<p class="skills-text">
+										Cloud Infrastructure Design
+									</p>
+								</div>
+
+								<div class="skills">
+									<i class="fa-solid fa-circle"></i>
+									<p class="skills-text">
+										Performance Optimization
+									</p>
+								</div>
+
+								<div class="skills">
+									<i class="fa-solid fa-circle"></i>
+									<p class="skills-text">
+										Security & Compliance
+									</p>
+								</div>
+							</div>
+
+							<div class="skill-items">
+								<div class="skills">
+									<i class="fa-solid fa-circle"></i>
+									<p class="skills-text">
+										Cloud Service Providers
+									</p>
+								</div>
+
+								<div class="skills">
+									<i class="fa-solid fa-circle"></i>
+									<p class="skills-text">
+										User Research & Usability
+									</p>
+								</div>
+
+								<div class="skills">
+									<i class="fa-solid fa-circle"></i>
+									<p class="skills-text">
+										Continuous Learning
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img
+					src="images/profile-img.png"
+					alt="Me"
+					class="profile-image" 
+				/>
+			</section>
+			<!-- END OF ABOUT SECTION -->
+
+			<section class="contact" id="contact-me">
+				<h2 class="contact-heading">Let's Talk!</h2>
+				<p class="contact-description">
+					Interested in working together or have a question? Feel free
+					to reach out. I'm here to help turn your ideas into amazing
+					realities!
+				</p>
+				<div class="contact-alt-detail-container">
+					<div class="email-detail-container">
+						<div>
+							<i class="fa-solid fa-envelope"></i>
+							<!-- <a href="mailto:essiencatherine55@gmail.com" target="_blank" rel="noreferrer noopener">
+								essiencatherine55@gmail.com
+							</a> -->
+							essiencatherine55@gmail.com
+						</div>
+						<div class="copy-btn" id="copy-btn" title="Copy email">Copy</div>
+					</div>
+
+					<div class="social-icon-details">
+						<a
+							href="https://www.linkedin.com/in/catherine-essien"
+							target="_blank">
+							<i
+								class="fa-brands fa-linkedin"
+								title="LinkedIn"
+								aria-label="LinkedIn profile">
+							</i>
+						</a>
+						<a
+							href="https://github.com/catherine-essien"
+							target="_blank">
+							<i
+								class="fa-brands fa-github"
+								title="GitHub"
+								aria-label="GitHub profile">
+							</i>
+						</a>
+						<a
+							href="https://x.com/Kate_Essien1?t=nChOjeHVFunskIcQImSj3w&s=09"
+							target="_blank">
+							<i
+								class="fa-brands fa-x-twitter"
+								title="Twitter"
+								aria-label="Twitter profile">
+							</i>
+						</a>
+					</div>
+				</div>
+				<form class="contact-form" action="https://formsubmit.co/essiencatherine55@gmail.com" method="post">
+					<div class="name-email-container">
+						<div class="name-container">
+							<label for="name">
+								Hi, I'm <span class="astericks">*</span>
+							</label>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								autocomplete="name"
+								required
+								placeholder="Your name" 
+							/>
+						</div>
+
+						<div class="email-container">
+							<label for="email">
+								Contact <span class="astericks">*</span>
+							</label>
+							<input
+								type="email"
+								autocomplete="email"
+								name="email"
+								id="email"
+								required
+								placeholder="Your email address" 
+							/>
+						</div>
+					</div>
+
+					<!-- <div class="subject-description-container">
+						<div class="subject-container">
+							<label for="email-subject">
+								Writing me regarding
+								<span class="astericks">*</span>
+							</label>
+							<input
+								type="text"
+								name="email_subject"
+								id="email-subject"
+								placeholder="Subject"
+								required 
+							/>
+						</div>
+
+						<div class="description-container">
+							<label for="email-description">
+								And here is my vision
+							</label>
+							<input
+								type="text"
+								name="email_description"
+								id="email-description"
+								placeholder="Description of project" 
+							/>
+						</div>
+					</div> -->
+
+					<div class="message-container">
+						<label for="message">
+							Message <span class="astericks">*</span>
+						</label>
+						<textarea 
+							name="message"
+							id="message"
+							placeholder="Tell me more about your project, or just say hi!"
+							required>
+						</textarea>
+					</div>
+
+					<button class="contact-form-btn" type="submit">
+						Submit
+						<i class="fa-solid fa-arrow-right-long"></i>
+					</button>
+				</form>
+			</section>
+			<!-- END OF CONTACT SECTION -->
+		</main>
+
+		<footer>
+			<p>
+				&copy; <span id="year"></span> Catherine Essien. All rights reserved.
+			</p>
+			<p>
+				Made with
+				<i class="fa-solid fa-heart" title="Love" aria-label="Love icon"></i>
+				by 
+				<a href="https://github.com/Destiny-Isiguzo" target="_blank">me</a>
+			</p>
+		</footer>
+	</body>
+</html>

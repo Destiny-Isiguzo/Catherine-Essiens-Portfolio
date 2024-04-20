@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .7rem;
+    padding: 0 clamp(0.8rem, -2.4394rem + 13.8216vw, 10rem) 1rem clamp(0.8rem, -2.4394rem + 13.8216vw, 10rem);
+    margin: auto;
+}
+
+footer p:nth-child(2) {
+    letter-spacing: .015rem;
+}
+
+footer p:nth-child(2) a {
+    color: var(--coder-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+footer p:nth-child(2) i {
+    color: orangered;
+}
+
+/* breakpoint 573px media query */
+@media screen and (max-width: 35.813em) {
+    footer {
+        justify-content: center;
+    }
+}
