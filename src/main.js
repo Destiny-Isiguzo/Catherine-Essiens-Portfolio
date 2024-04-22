@@ -205,7 +205,7 @@ const copyBtn = document.getElementById('copy-btn');
 
 copyBtn.addEventListener('click', () => {
 	// Copy the text to clipboard
-	const success = copyToClipboard('essiencatherine55@gmail.com');
+	const success = copyToClipboard('essiencatherine1@gmail.com');
 	if (success) {
 		// Change the inner text to "copied"
 		copyBtn.innerText = 'copied!';
