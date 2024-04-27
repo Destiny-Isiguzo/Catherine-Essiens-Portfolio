@@ -160,25 +160,6 @@ loaderWrapper.addEventListener('transitionend', () => {
 
 
 
-// const dotAnimation = document.getElementById('dot-animation');
-// const dotLoader = document.getElementById('dot-loader');
-
-// // window.addEventListener('DOMContentLoaded', () => {
-// // 	dotAnimation.classList.add('dot-animation-loaded');
-// // 	dotLoader.classList.add('dot-animation-loaded');
-// //     // alert("DOM is loaded");
-// // });
-
-// // Listen for the transitionend event on the loader element
-// dotAnimation.addEventListener('transitionend', () => {
-// 	dotAnimation.parentNode.removeChild(dotAnimation);
-// });
-
-
-
-
-
-
 const topButton = document.getElementById('top-btn');
 
 topButton.addEventListener('click', () => {
